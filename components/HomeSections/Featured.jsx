@@ -6,7 +6,7 @@ const FeaturedTutorials = async () => {
   let error = "";
 
   try {
-    const res = await fetch("http://localhost:3000/api?collection=featured", {
+    const res = await fetch("https://codewizabhay.vercel.app/api?collection=featured", {
       next: { revalidate: 3600 }, // Revalidate cache every hour (3600 seconds)
     });
     if (!res.ok) {
