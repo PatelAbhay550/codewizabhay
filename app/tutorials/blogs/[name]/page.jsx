@@ -13,7 +13,7 @@ const TutorialPage = async ({ params }) => {
     });
     console.log(params.name);
 
-    const url = `http://localhost:3000/api?collection=featured&title=${params.name}`;
+    const url = `https://codewizabhay.vercel.app/api?collection=featured&title=${params.name}`;
     console.log("Fetching URL:", url); // Log URL for debugging
 
     const res = await fetch(url, {
